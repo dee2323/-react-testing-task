@@ -9,3 +9,8 @@ test("renders counters for complete tasks and total number of tasks in the foote
     expect(FooterDisplay.textContent).
         toBe("Tasks 2Completed Tasks 0");
 });
+test('renders footer correctly', () => {
+    render(<Footer tasks={[]} />)
+    const footer = screen.getByTitle('footer')
+    expect(footer).toBeInTheDocument()
+})

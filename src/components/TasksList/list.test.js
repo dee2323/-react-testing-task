@@ -8,7 +8,6 @@ test("should display tasks", () => {
     render(<TasksList tasks={todo} handleDeletingTask={jest.fn()}
         handleCompletion={() => { }} isSearching={false} />);
     const DisplayTasks = screen.getByTitle("todos");
-
     expect(DisplayTasks.children.length).toBe(2);
 
 });

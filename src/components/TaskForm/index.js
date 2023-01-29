@@ -8,7 +8,9 @@ const TaskForm = ({ handleAddingTask }) => {
         <p className={style.p}>Today I need to ✏️</p>
         <form className={style.form} onSubmit={(e) => e.preventDefault()}>
             <input type="text" placeholder="Enter your task..." className="task" value={input} onChange={(e) => setInput(e.target.value)} />
-            <button type="submit" className='add' onClick={() => { input && handleAddingTask(input); setInput('') }}><i className="fal fa-plus"></i></button>
+            <button type="submit" className='add' title='add'
+                onClick={() => { input && handleAddingTask(input); setInput('') }}>
+                <i className="fal fa-plus"></i></button>
         </form>
     </>)
 }
