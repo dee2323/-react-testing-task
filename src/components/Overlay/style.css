@@ -1,4 +1,3 @@
-
 .overlay {
     position: absolute;
     top: 0;
@@ -35,7 +34,7 @@
 }
 
 .display {
-    display: none;
+    display: hidden;
 }
 
 .confirmBtns button {

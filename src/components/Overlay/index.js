@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 const Overlay = ({ setShowOverlay, id, handleDeletingTask }) => {
-    return (<div className="overlay" id="overlay">
+    return (<div className="overlay" id="overlay" title="overlay">
         <div className="confirm-box">
             <div>
                 <p>Are you sure delete this task?</p>
